@@ -121,21 +121,21 @@ setInterval(function() {
  abbrNum((BubbleClick = Math.floor(ClickBoost * BuoIBoost * (1 * Math.pow(1.8, (PopperWaver1Bought + 1))))),3);}, 30)
 
 setInterval(function() {
-  document.getElementById("BubblePopperCost").innerText = abbrNum(BubblePopperCost,3);
+  document.getElementById("BubblePopperCost").innerText = (BubblePopperCost,3);
 }, 100);
 setInterval(function() {
-  document.getElementById("PopperWaver1Cost").innerText = abbrNum(PopperWaver1Cost,3);
+  document.getElementById("PopperWaver1Cost").innerText = (PopperWaver1Cost,3);
 }, 100);
 setInterval(function() {
-  document.getElementById("Bubblepopperbps").innerText = abbrNum(Bubblepopperbps,3);
+  document.getElementById("Bubblepopperbps").innerText = (Bubblepopperbps,3);
 }, 100);
 setInterval(function() {
-  document.getElementById("BubbleClick").innerText = abbrNum(BubbleClick,3);
+  document.getElementById("BubbleClick").innerText = (BubbleClick,3);
 }, 100);
 setInterval(function() {
   document.getElementById("ClickBoost").innerText = ClickBoost;
 }, 100);
 setInterval(function() {
-  document.getElementById("BuoIPrice").innerText = abbrNum(BuoIPrice,3);
+  document.getElementById("BuoIPrice").innerText = (BuoIPrice,3);
 }, 100);
 
