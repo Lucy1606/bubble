@@ -20,7 +20,7 @@ function abbrNum(X, decPlaces) {
   for (var i = abbrev.length - 1; i >= 0; i--) {
     var size = Math.pow(10, (i + 1) * 3);
     if (size <= X) {
-      x = Math.round(x * decPlaces / size) / decPlaces;
+      X = Math.round(X * decPlaces / size) / decPlaces;
       if ((X == 1000) && (i < abbrev.length - 1)) {
         XMLHttpRequest = 1;
         i++;
@@ -32,7 +32,6 @@ function abbrNum(X, decPlaces) {
 
   return X;
 }
-console.log(abbrNum(120032, 2))
 
 abbrNum(X,2)
 
@@ -46,7 +45,7 @@ function popBubble() {
     ClickBoost = 10
   }
   setInterval(function() {
-    document.getElementById("B").innerHTML = Math.round(X)
+    document.getElementById("B").innerHTML = X
     document.getElementById("B").innerText = abbrNum(X,3)
     document.getElementById("BubbletotalClicks").innerText = BubbletotalClicks;
   }, 1000);
