@@ -1,4 +1,4 @@
-function abbrNum(x, decPlaces) {
+function abbrNum(X, decPlaces) {
   // 2 decimal places => 100, 3 => 1000, etc
   decPlaces = Math.pow(10, decPlaces);
 
@@ -12,13 +12,13 @@ function abbrNum(x, decPlaces) {
     var size = Math.pow(10, (i + 1) * 3);
 
     // If the number is bigger or equal do the abbreviation
-    if (size <= x) {
+    if (size <= X) {
       // Here, we multiply by decPlaces, round, and then divide by decPlaces.
       // This gives us nice rounding to a particular decimal place.
       x = Math.round(x * decPlaces / size) / decPlaces;
 
       // Handle special case where we round up to the next abbreviation
-      if ((x == 1000) && (i < abbrev.length - 1)) {
+      if ((X == 1000) && (i < abbrev.length - 1)) {
         XMLHttpRequest = 1;
         i++;
       }
@@ -31,8 +31,8 @@ function abbrNum(x, decPlaces) {
     }
   }
 
-  return x;
+  return X;
 }
 console.log(abbrNum(120032, 2))
 
-abbrNum(x,2)
+abbrNum(X,2)
