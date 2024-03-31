@@ -1,5 +1,5 @@
 let x = 0;
-let bubbleClick = 1;
+let clickStrength = 1;
 let bubbletotalClicks = 0;
 let ClickBoost = 1.00;
 let bubblepopper = 0;
@@ -15,7 +15,7 @@ let BuoI = 0
 let BuoIBoost = 1
 
 function popBubble() {
-  x = x + Math.round(bubbleClick * 10) / 10;
+  x = x + Math.round(clickStrength * 10) / 10;
   bubbletotalClicks = bubbletotalClicks + 1;
   if (ClickBoost < 10) {
     ClickBoost = Math.floor((ClickBoost * 1000) * 1.0025285) / 1000;
@@ -86,7 +86,7 @@ function Bloat() {
     BubblePopperCost = 25
     PopperWaver1Cost = 100
     bubbletotalClicks = 0
-    bubbleClick = 1
+    clickStrength = 1
     PlasmaBubbles = PlasmaBubbles + Math.floor(Math.pow(bubbles, 0.1))
     
   }
@@ -97,7 +97,7 @@ setInterval(function() {
  }, 30);
 
 setInterval(function() {
- abbrNum((bubbleClick = Math.floor(ClickBoost * BuoIBoost * (1 * Math.pow(1.8, (PopperWaver1Bought + 1))))),3);}, 30)
+ abbrNum((clickStrength = Math.floor(ClickBoost * BuoIBoost * (1 * Math.pow(1.8, (PopperWaver1Bought + 1))))),3);}, 30)
 
 
 
