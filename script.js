@@ -93,11 +93,11 @@ function Bloat() {
 }
 
 setInterval(function() {
-  Bubblepopperbps= Math.floor(ClickBoost * bubblepopper * (1 * Math.pow(1.6, PopperWaver1Bought)));
+  Bubblepopperbps= Math.floor(ClickBoost * Bubblepopper * (1 * Math.pow(1.6, PopperWaver1Bought)));
  }, 30);
 
 setInterval(function() {
- abbrNum((bubbleClick = Math.floor(ClickBoost * BuoIBoost * (1 * Math.pow(1.8, (PopperWaver1Bought + 1))))),3);}, 30)
+ abbrNum((BubbleClick = Math.floor(ClickBoost * BuoIBoost * (1 * Math.pow(1.8, (PopperWaver1Bought + 1))))),3);}, 30)
 
 setInterval(function() {
   document.getElementById("BubblePopperCost").innerText = abbrNum(BubblePopperCost,3);
