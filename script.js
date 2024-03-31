@@ -25,7 +25,7 @@ function abbrNum(X, decPlaces) {
         XMLHttpRequest = 1;
         i++;
       }
-      x += abbrev[i];
+      X += abbrev[i];
       break;
     }
   }
