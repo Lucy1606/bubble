@@ -128,10 +128,10 @@ setInterval(function() {
   document.getElementById("PopperWaver1Cost").innerText = abbrNum(PopperWaver1Cost,3);
 }, 100);
 setInterval(function() {
-  document.getElementById("bubblepopperbps").innerText = abbrNum(Bubblepopperbps,3);
+  document.getElementById("Bubblepopperbps").innerText = abbrNum(Bubblepopperbps,3);
 }, 100);
 setInterval(function() {
-  document.getElementById("bubbleClick").innerText = abbrNum(BubbleClick,3);
+  document.getElementById("BubbleClick").innerText = abbrNum(BubbleClick,3);
 }, 100);
 setInterval(function() {
   document.getElementById("ClickBoost").innerText = ClickBoost;
