@@ -99,5 +99,22 @@ setInterval(function() {
 setInterval(function() {
  abbrNum((bubbleClick = Math.floor(ClickBoost * BuoIBoost * (1 * Math.pow(1.8, (PopperWaver1Bought + 1))))),3);}, 30)
 
-
+setInterval(function() {
+  document.getElementById("BubblePopperCost").innerText = abbrNum(BubblePopperCost,3);
+}, 100);
+setInterval(function() {
+  document.getElementById("PopperWaver1Cost").innerText = abbrNum(PopperWaver1Cost,3);
+}, 100);
+setInterval(function() {
+  document.getElementById("bubblepopperbps").innerText = abbrNum(bubblepopperbps,3);
+}, 100);
+setInterval(function() {
+  document.getElementById("bubbleClick").innerText = abbrNum(bubbleClick,3);
+}, 100);
+setInterval(function() {
+  document.getElementById("ClickBoost").innerText = ClickBoost;
+}, 100);
+setInterval(function() {
+  document.getElementById("BuoIPrice").innerText = abbrNum(BuoIPrice,3);
+}, 100);
 
