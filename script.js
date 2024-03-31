@@ -1,5 +1,5 @@
 let x = 0;
-let clickStrength = 1;
+let bubbleClick = 1;
 let bubbletotalClicks = 0;
 let ClickBoost = 1.00;
 let bubblepopper = 0;
