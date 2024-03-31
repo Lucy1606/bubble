@@ -14,6 +14,28 @@ let LogBubbles = 0;
 let BuoI = 0
 let BuoIBoost = 1
 
+function abbrNum(X, decPlaces) {
+  decPlaces = Math.pow(10, decPlaces);
+  var abbrev = ["K", "M", "B", "T", "q", "Q", "s", "S", "O", "No", "d","U", "D", "Td", "qd", "Qd", "sd", "Sd", "Od", "Nd", "Vt", "UVt", "DVt", "TVt", "qVt", "QVt", "sVt", "SVt", "OVt", "NVt", "Tr", "UTr", "DTr", "TTr", "qTr","QTr", "sTr", "STr", "OTr", "NTr", "Qd", "UQd"];
+  for (var i = abbrev.length - 1; i >= 0; i--) {
+    var size = Math.pow(10, (i + 1) * 3);
+    if (size <= X) {
+      x = Math.round(x * decPlaces / size) / decPlaces;
+      if ((X == 1000) && (i < abbrev.length - 1)) {
+        XMLHttpRequest = 1;
+        i++;
+      }
+      x += abbrev[i];
+      break;
+    }
+  }
+
+  return X;
+}
+console.log(abbrNum(120032, 2))
+
+abbrNum(X,2)
+
 function popBubble() {
   X = X + Math.round(BubbleClick * 10) / 10;
   BubbletotalClicks = BubbletotalClicks + 1;
